@@ -1,5 +1,5 @@
-angular.module("ngContacts").
-component('appComponent', {
+angular.module("ngContacts")
+.component('appComponent', {
   controller : function(){
     var vm = this;
   },
