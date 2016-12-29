@@ -25,6 +25,6 @@ template :
 </select><br>
           <input type="text" placeholder= "Zip" ng-model="$ctrl.newContact" /><br>
           <button ng-click="$ctrl.addContact($ctrl.newContact);">Create</button>
-          <contact-list data="$ctrl.contacts" show-complete="$ctrl.showComplete"></contact-list>
+          <contact-list data="$ctrl.contacts"></contact-list>
           `
 });
