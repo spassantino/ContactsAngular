@@ -15,6 +15,13 @@ angular.module("ngContacts")
     vm.contacts = contactService.getContacts();
     vm.addContact = function(firstname, lastname, email, phone, str, cit, stat, zi){
       contactService.createContact(firstname, lastname, email, phone, str, cit, stat, zi);
+      vm.newFirstname = "";
+      vm.newLastname = "";
+      vm.newEmail = "";
+      vm.newPhone = "";
+      vm.newAddressStreet = "";
+      vm.newAddressCity = "";
+      vm.newAddressZip = "";
     };
   },
 template :
