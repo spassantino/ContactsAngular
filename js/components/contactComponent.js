@@ -10,9 +10,7 @@ angular.module("ngContacts")
     vm.newAddressCity = "";
     vm.newState= "";
     vm.newAddressZip = "";
-    console.log(STATES_LIST.states);
     vm.states= STATES_LIST.states;
-    console.log(vm.states);
     vm.contacts = contactService.getContacts();
     vm.addContact = function(firstname, lastname, email, phone, str, cit, stat, zi){
       contactService.createContact(firstname, lastname, email, phone, str, cit, stat, zi);
