@@ -13,8 +13,8 @@ angular.module("ngContacts")
     vm.states= STATES_LIST.states;
     console.log(vm.states);
     vm.contacts = contactService.getContacts();
-    vm.addContact = function(firstname, lastname, email, phone, street, city, state, zip){
-      contactService.createContact(firstname, lastname, email, phone, street, city, state, zip);
+    vm.addContact = function(firstname, lastname, email, phone, str, cit, stat, zi){
+      contactService.createContact(firstname, lastname, email, phone, str, cit, stat, zi);
     };
   },
 template :
@@ -31,7 +31,7 @@ template :
           <select ng-model="selectedState" ng-options="state.abbreviation for state in $ctrl.states track by state.name">
           </select><br>
           <input type="text" placeholder= "Zip" ng-model="$ctrl.newAddressZip" /><br>
-          <button ng-click="$ctrl.addContact($ctrl.newFirstname, $ctrl.newLastname, $ctrl.newEmail, $ctrl.newPhone, $ctrl.newAddressStreet, $ctrl.newAddressCity, selectedState);">Create</button>
+          <button ng-click="$ctrl.addContact($ctrl.newFirstname, $ctrl.newLastname, $ctrl.newEmail, $ctrl.newPhone, $ctrl.newAddressStreet, $ctrl.newAddressCity, selectedState.name, $ctrl.newAddressZip);">Create</button>
           <contact-list data="$ctrl.contacts"></contact-list>
           `
 });

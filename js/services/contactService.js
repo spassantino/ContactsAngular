@@ -12,10 +12,9 @@ angular.module("ngContacts")
         return contacts;
       }
       var createContact = function(fn, ln, em, ph, str, ci, stat, zi){
-        // var id1 = contacts.length + 1;
-        var newContact = {firstname:fn , lastname:ln, email:em, phone:ph, address:
-        {       street:str, city:ci, state:stat, zip:zi    }
-      }
+        var add =        {       street:str, city:ci, state:stat, zip:zi    };
+        var newContact = {firstname:fn , lastname:ln, email:em, phone:ph, address: add
+      };
       console.log(newContact);
         contacts.push(newContact);
       }
