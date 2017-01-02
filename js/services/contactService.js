@@ -11,11 +11,12 @@ angular.module("ngContacts")
       var getContacts= function(){
         return contacts;
       }
-      var createContact = function(aContact){
+      var createContact = function(fn, ln, em, ph, str, ci, stat, zi){
         // var id1 = contacts.length + 1;
-        var newContact = {firstname:"" , lastname:"", email:"", phone:"", address:
-        {       street:"", city:"", state:"", zip:""    }
-      };
+        var newContact = {firstname:fn , lastname:ln, email:em, phone:ph, address:
+        {       street:str, city:ci, state:stat, zip:zi    }
+      }
+      console.log(newContact);
         contacts.push(newContact);
       }
       var deleteContact = function(dContact){
