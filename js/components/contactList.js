@@ -9,14 +9,18 @@ angular.module("ngContacts")
   },
   template :
   `
-  <div ng-repeat="contact in $ctrl.data">
+  <table>
+  <tr>
+  <td ng-repeat="contact in $ctrl.data">
   <h2>{{contact.firstname}} {{contact.lastname}}</h2>
   <h4>{{contact.email}}</h4>
   <h4>{{contact.phone}}</h4>
   <h4>{{contact.address.street}}</h4>
   <h4>{{contact.address.city}} {{contact.address.state}} {{contact.address.zip}}</h4>
-
-  </div>
+  <button ng-click="$ctrl.remove('{{contact}}')">Delete</button>
+  </td>
+  </tr>
+  </table>
   `,
 bindings : {
   data : "=",

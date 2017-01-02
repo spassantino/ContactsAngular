@@ -12,10 +12,10 @@ angular.module("ngContacts")
         return contacts;
       }
       var createContact = function(aContact){
-        var id1 = contacts.length + 1;
-        var newContact = {firstname:"Toby", lastname:"Keith", email:"tk@yahoo.com", phone:"555-8555", address:
-        {       street:"141 Teacup Dr", city:"Denver", state:"CO", zip:"80220"    }
-      }
+        // var id1 = contacts.length + 1;
+        var newContact = {firstname:"" , lastname:"", email:"", phone:"", address:
+        {       street:"", city:"", state:"", zip:""    }
+      };
         contacts.push(newContact);
       }
       var deleteContact = function(dContact){
