@@ -29,8 +29,7 @@ template :
           <input type="text" placeholder= "Phone" ng-model="$ctrl.newPhone" /><br>
           <input type="text" placeholder= "Street" ng-model="$ctrl.newAddressStreet" /><br>
           <input type="text" placeholder= "City" ng-model="$ctrl.newAddressCity" /><br>
-          <select ng-model="$ctrl.states" ng-options="state.abbreviation for state in $ctrl.states">
-          <option>--</option>
+          <select ng-model="selectedState" ng-options="state.abbreviation for state in $ctrl.states track by state.name">
           </select><br>
           <input type="text" placeholder= "Zip" ng-model="$ctrl.newAddressZip" /><br>
           <button ng-click="$ctrl.addContact($ctrl.newContact);">Create</button>
