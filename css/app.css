@@ -1,16 +1,18 @@
 body{
-  background-color: black;
-  color: white;
+  background-image: url("../photo/corkboard.jpg");
+  color: black;
+  font-family: cursive;
 }
 td{
-  border-style: outset;;
-  border-color: green;
-  border-width: thick;
-  color: red;
+  background-image: url("../photo/paper.jpg");
 }
-h2{
-  border-style: inset;
-  border-width: thick;
-  border-color: green;
-  color: red;
+#contactAdd{
+  background-image: url("../photo/paper.jpg");
+  padding-left: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+input[type=text]{
+  border: none;
 }

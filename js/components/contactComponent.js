@@ -26,8 +26,9 @@ angular.module("ngContacts")
   },
 template :
           `
+          <form id="contactAdd">
           <h1>
-            ngContacts
+            Contacts
           </h1>
           <input type="text" placeholder="First Name" ng-model="$ctrl.newFirstname" /><br>
           <input type="text" placeholder="Last Name" ng-model="$ctrl.newLastname" /><br>
@@ -39,6 +40,7 @@ template :
           </select><br>
           <input type="text" placeholder= "Zip" ng-model="$ctrl.newAddressZip" /><br>
           <button ng-click="$ctrl.addContact($ctrl.newFirstname, $ctrl.newLastname, $ctrl.newEmail, $ctrl.newPhone, $ctrl.newAddressStreet, $ctrl.newAddressCity, selectedState.name, $ctrl.newAddressZip); selectedState='$ctrl.newState'">Create</button>
+          </form>
           <contact-list data="$ctrl.contacts"></contact-list>
           `
 });

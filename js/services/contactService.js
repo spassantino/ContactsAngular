@@ -12,8 +12,8 @@ angular.module("ngContacts")
         return contacts;
       }
       var createContact = function(fn, ln, em, ph, str, ci, stat, zi){
-        var add =        {       street:str, city:ci, state:stat, zip:zi    };
-        var newContact = {firstname:fn , lastname:ln, email:em, phone:ph, address: add
+        var newContact = {firstname:fn , lastname:ln, email:em, phone:ph, address: {
+          street:str, city:ci, state:stat, zip:zi    }
       };
       console.log(newContact);
         contacts.push(newContact);
