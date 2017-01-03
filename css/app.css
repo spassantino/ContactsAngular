@@ -2,17 +2,29 @@ body{
   background-image: url("../photo/corkboard.jpg");
   color: black;
   font-family: cursive;
+  border-style: ridge;
+  border-width: thick;
 }
 td{
   background-image: url("../photo/paper.jpg");
+  background-size: contain;
+
 }
 #contactAdd{
   background-image: url("../photo/paper.jpg");
   padding-left: 45%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
 }
 input[type=text]{
   border: none;
+  padding-top: 1pt;
+  padding-bottom: 1pt;
+}
+h1{
+  padding-left: 45%;
+  background-image: url("../photo/paper.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
 }

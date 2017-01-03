@@ -26,10 +26,10 @@ angular.module("ngContacts")
   },
 template :
           `
-          <form id="contactAdd">
-          <h1>
+          <h1 class="contactClass">
             Contacts
           </h1>
+          <form id="contactAdd">
           <input type="text" placeholder="First Name" ng-model="$ctrl.newFirstname" /><br>
           <input type="text" placeholder="Last Name" ng-model="$ctrl.newLastname" /><br>
           <input type="text" placeholder= "Email" ng-model="$ctrl.newEmail" /><br>
