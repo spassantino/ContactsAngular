@@ -20,11 +20,12 @@ input[type=text]{
   border: none;
   padding-top: 1pt;
   padding-bottom: 1pt;
+  position: relative;
 }
 h1{
   padding-left: 45%;
   background-image: url("../photo/paper.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
+  position: relative;
 }

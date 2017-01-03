@@ -12,6 +12,7 @@ angular.module("ngContacts")
   <table>
   <tr>
   <td ng-repeat="contact in $ctrl.data">
+  <img src="photo/thumbtack.png" class="thumbtacks">
   <h2>{{contact.firstname}} {{contact.lastname}}</h2>
   <h4>{{contact.email}}</h4>
   <h4>{{contact.phone}}</h4>

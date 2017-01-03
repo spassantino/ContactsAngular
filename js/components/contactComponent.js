@@ -27,9 +27,12 @@ angular.module("ngContacts")
 template :
           `
           <h1 class="contactClass">
+          <img src="photo/thumbtack.png" class="thumbtacks"><br>
             Contacts
           </h1>
           <form id="contactAdd">
+          <img src="photo/thumbtack.png" class="thumbtacks"><br>
+
           <input type="text" placeholder="First Name" ng-model="$ctrl.newFirstname" /><br>
           <input type="text" placeholder="Last Name" ng-model="$ctrl.newLastname" /><br>
           <input type="text" placeholder= "Email" ng-model="$ctrl.newEmail" /><br>
